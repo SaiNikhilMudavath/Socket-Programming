@@ -1,3 +1,6 @@
+# Socket Programming
+There is a txt file with server which has words seperated by commas. The goal is to send this file to a client which requests for this file.
+
 Part-1
 This part is client-server communication using TCP sockets. 
 The goal of the client program is to read a list of words from a file located on the server and count the frequency of the words.
@@ -16,3 +19,6 @@ Part-4:
 Server can maintain multiple concurrent active connections. 
 However, this time, the server schedules concurrent data requests using a centralized scheduling algorithm.
 The scheduling policies are FIFO, Fair Scheduling.
+
+
+Each part has a config.json, which specifies the server's ip and port which is requried for client to initiate the connection. It also has an attribute (input_file) for location of the file in the server. It has also attributes k which is the number of words the server responds with given a offset by client and p, the number of words sent in a packet by server to client.
